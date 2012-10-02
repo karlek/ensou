@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+
+      <link href="inc/css/reset.css" rel="stylesheet">
+      <link href="inc/css/style.css" rel="stylesheet">
+      
+      <title>HTML5 & Javascript with CSS styling - Youtube AB-repeat</title>
+   </head>
+   <body>
+      <noscript>To use AB-repeat you unfortunately need Javascript turned on. Sorry!</noscript>
+
+      <form id="form" onsubmit="loadVideo(document.forms.form.u.value, document.forms.form.s.value, document.forms.form.e.value); return false;">
+         <label for="id">Youtube url or ID:</label>
+         <input type="text" name="u" id="id" size="50" value="http://www.youtube.com/watch?v=mC9kkqt6F88"><br>
+
+         <label for="start">Start time (in seconds):</label><br>
+         <input type="text" name="s" id="start" size="2"><br>
+
+         <label for="end">End time (in seconds):</label><br>
+         <input type="text" name="e" id="end" size="2"><br>
+
+         <input type="submit" value="AB-repeat!">
+      </form>
+
+      <!-- This div will be dynamically changed into the youtube object -->
+      <div id="playerDiv"></div>
+
+      <script type="text/javascript" src="inc/js/swfobject/swfobject.js"></script>
+      <script type="text/javascript" src="inc/js/ytub.js"></script>
+   </body>
+</html>
