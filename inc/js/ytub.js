@@ -1,4 +1,3 @@
-var repeat = 1;
 var end;
 var start;
 
